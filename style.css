@@ -1,0 +1,39 @@
+.section {
+  max-width: 1170px;
+  margin: auto;
+}
+
+ul {
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(3, auto);
+  gap: 30px;
+  grid-auto-rows: 370px;
+}
+li {
+  display: grid;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-content: space-between;
+
+  button {
+    width: 40px;
+    height: 40px;
+
+    &:nth-last-of-type {
+      margin-left: auto;
+    }
+  }
+}
+img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
